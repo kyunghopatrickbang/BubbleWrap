@@ -1,0 +1,11 @@
+webhelper.enabled=false
+app.autostart-mode="off"
+app.autostart-configured=true
+app.autostart-banner-seen=true
+storage.last-location="C:\\Users\\KyungHo.DESKTOP-CRO6N0P\\AppData\\Local\\Spotify\\Storage"
+core.clock_delta=5
+core.facebook_machine_id="3FWbWbvk1tLOwExiIyhw2A4F"
+autologin.username="ohgnuykgnab@gmail.com"
+autologin.saved_credentials="{\"khpbang\":[\"ohgnuykgnab@gmail.com\",\"KvkDArUdytfDiIfPrKMZuwUtOnRU36mL/5GLJoc2XJbvpfnz3BY/mh2LPFf1RyMSCwLXzAHVR9NuFcRm+ZNrtoEDCUQjpruVTkmxVh8go/OTNbHnmuzLmixNsrFmxWMvYu7eBjyBODcrZYdzABdjrgJKMk7XRfAb7Mh5WhtR4XBXQ7KwTxs6YLd0Vcy59Xjd\"]}"
+autologin.canonical_username="khpbang"
+autologin.blob="KvkDArUdytfDiIfPrKMZuwUtOnRU36mL/5GLJoc2XJbvpfnz3BY/mh2LPFf1RyMSCwLXzAHVR9NuFcRm+ZNrtoEDCUQjpruVTkmxVh8go/OTNbHnmuzLmixNsrFmxWMvYu7eBjyBODcrZYdzABdjrgJKMk7XRfAb7Mh5WhtR4XBXQ7KwTxs6YLd0Vcy59Xjd"

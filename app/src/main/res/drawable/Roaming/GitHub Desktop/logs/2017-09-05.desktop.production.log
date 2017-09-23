@@ -1,0 +1,48 @@
+2017-09-05T15:02:59.184Z - warn: [ui] Unknown URL action: unknown - payload: {"name":"unknown","url":"--squirrel-firstrun"}
+2017-09-05T15:03:00.706Z - error: [ui] Error checking for updates
+Error: Command failed: 4294967295
+System.AggregateException: One or more errors occurred. ---> System.Exception: Couldn't acquire lock, is another instance running
+   at Squirrel.SingleGlobalInstance..ctor(String key, TimeSpan timeOut)
+   at Squirrel.UpdateManager.<acquireUpdateLock>b__32_0()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.UpdateManager.<CheckForUpdate>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Update.Program.<Download>d__7.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+   at Squirrel.Update.Program.Main(String[] args)
+---> (Inner Exception #0) System.Exception: Couldn't acquire lock, is another instance running
+   at Squirrel.SingleGlobalInstance..ctor(String key, TimeSpan timeOut)
+   at Squirrel.UpdateManager.<acquireUpdateLock>b__32_0()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.UpdateManager.<CheckForUpdate>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Update.Program.<Download>d__7.MoveNext()<---
+
+
+    at AutoUpdater.emitError (C:\Users\KyungHo.DESKTOP-CRO6N0P\AppData\Local\GitHubDesktop\app-0.8.0\resources\electron.asar\browser\api\auto-updater\auto-updater-win.js:58:24)
+    at squirrelUpdate.download (C:\Users\KyungHo.DESKTOP-CRO6N0P\AppData\Local\GitHubDesktop\app-0.8.0\resources\electron.asar\browser\api\auto-updater\auto-updater-win.js:34:21)
+    at C:\Users\KyungHo.DESKTOP-CRO6N0P\AppData\Local\GitHubDesktop\app-0.8.0\resources\electron.asar\browser\api\auto-updater\squirrel-update-win.js:89:14
+    at ChildProcess.<anonymous> (C:\Users\KyungHo.DESKTOP-CRO6N0P\AppData\Local\GitHubDesktop\app-0.8.0\resources\electron.asar\browser\api\auto-updater\squirrel-update-win.js:71:14)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:191:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:215:12)
+2017-09-05T15:06:47.814Z - info: [ui] Opt out reported.
+2017-09-05T15:20:01.645Z - warn: [ui] Unknown URL action: unknown - payload: {"name":"unknown","url":"--version"}
+2017-09-05T15:21:43.123Z - warn: [ui] Unknown URL action: unknown - payload: {"name":"unknown","url":"--version"}
